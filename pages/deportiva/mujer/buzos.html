@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Avantageux</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./img/logo-transparent.png" alt="boutique logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Hombre</a></li>
+                <li><a href="#">Mujer</a></li>
+                <li><a href="#">Niños</a></li>
+                <li><a href="#">Niñas</a></li>
+                <li><a href="#">Deportes</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="bienvenida-section">
+        <h1>Bienvenidos a Avantageux Boutique</h1>
+        <img src="./img/boutique-mainpage.jpg" alt="Imagen de Bienvenida">
+    </div>
+    
+    <h2 class="carrousel-h2">Explora nuestras categorias</h2>
+    <div class="carousel">
+
+        <div class="carousel-images">
+            <p class="carousel-p">Hombre<br><img src="./img/men-clothes.jpg" alt="Categoria Hombre"></p>
+            <p class="carousel-p">Mujer<br><img src="./img/woman-clothes.jpg" alt="Categoria Mujer"></p>
+            <p class="carousel-p">Niños<br><img src="./img/kid-m-clothes.png" alt="Categoria Nino"></p>
+            <p class="carousel-p">Niñas<br><img src="./img/kids-f-clothes.webp" alt="Categoria Nina"></p>
+            <p class="carousel-p">Deportes<br><img src="./img/sports-clothes.png" alt="Categoria Deportes"></p>
+            <p class="carousel-p">Accesorios<br><img src="./img/accesories-clothes.jpg" alt="Categoria Accesorios"></p>
+        </div>
+        <!-- <div class="carousel-buttons">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+        </div> -->
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contactanos</h3>
+                <ul>
+                    <li><a href="#">4001-0000</a></li>
+                    <li><a href="#">www.avantageux.co.cr</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Avantageux Boutique LCC | <a href="#">Politica de Privacidad</a> | <a href="#">Terminos y Condiciones</a>
+        </div>
+    </footer>
+    <!-- <script>
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const carouselImages = document.querySelector('.carousel-images');
+        const totalImages = document.querySelectorAll('.carousel-images').length/3;
+        let index = 0;
+
+        function showImage(n) {
+            if (n >= totalImages) {
+                index = 0;
+            } else if (n < 0) {
+                index = totalImages - 1;
+            } else {
+                index = n;
+            }
+            carouselImages.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prevButton.addEventListener('click', () => showImage(index - 1));
+        nextButton.addEventListener('click', () => showImage(index + 1));
+    </script> -->
+</body>
+</html>

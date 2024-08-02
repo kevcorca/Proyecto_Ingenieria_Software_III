@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* flex: 1; */
+}
+
+/* +------------------------------------------------------------------------------------------------+ */
+
+/* header */
+header {
+    background-color: #222222;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    flex: 1;
+}
+.logo img {
+    height: 100px;
+    /* text-align: left; */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+/* +------------------------------------------------------------------------------------------------+ */
+
+/* PORTADA DE BIENVENIDA */
+
+.bienvenida-section h1 {
+    font-size: 32px;
+    text-align: center;
+    margin: 0;
+    padding: 28px;
+}
+.bienvenida-section img {
+    width: 100%;
+    height: 700px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+/* SEPARADOR */
+.separador {
+    border: 0;
+    height: 2px;
+    background: #777777;
+    margin: 20px 0;
+}
+
+/* CARRUSEL DE CATEGORIAS */
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.carrousel-h2 {
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+    padding: 28px;
+}
+
+.carousel-p {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    padding: 12px;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.carousel-item:hover .overlay {
+    opacity: 1;
+}
+
+.carousel-item .overlay a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/* LOGIN Y REGISTRO */
+
+.session-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+
+.session-container h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.session-container .form-group {
+    margin-bottom: 20px;
+}
+
+.session-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.session-container .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.session-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #444444;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.session-container button:hover {
+    background-color: #FFA600;
+}
+
+.session-container p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* REGISTRO */
+
+.session-container button:hover {
+    background-color: #c70040;
+}
+
+
+/* CARRITO */
+.cart-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.cart-container h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.cart-item .item-details {
+    flex: 1;
+}
+
+.cart-item .item-details p {
+    margin: 5px 0;
+}
+
+.cart-item button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.cart-item button:hover {
+    background-color: #c70039;
+}
+
+.cart-summary {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.cart-summary p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart-summary button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-summary button:hover {
+    background-color: #c70039;
+}
+
+
+
+/* +------------------------------------------------------------------------------------------------+ */
+
+/* footer */
+footer {
+    background-color: #222222;
+    color: #FFFFFF;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.footer-column h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444444;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.footer-bottom p a {
+    color: #FFFFFF;
+}
+
+
+/* +------------------------------------------------------------------------------------------------+ */
+
+/* DEPORTIVA */
+
+/* #main-deportiva image{
+    width: 100%;
+    height: 21100px;
+} */
